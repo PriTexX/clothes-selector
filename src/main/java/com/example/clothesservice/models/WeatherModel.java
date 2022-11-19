@@ -6,9 +6,9 @@ public class WeatherModel {
     private int windSpeed;
     private String weather;
     private int feelsLike;
-    private boolean isDay;
+    private Boolean isDay;
 
-    public WeatherModel(int temperature, int humidity, int windSpeed, String weather, int feelsLike, boolean isDay) {
+    public WeatherModel(int temperature, int humidity, int windSpeed, String weather, int feelsLike, Boolean isDay) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.windSpeed = windSpeed;
@@ -57,11 +57,11 @@ public class WeatherModel {
         this.feelsLike = feelsLike;
     }
 
-    public boolean isDay() {
+    public Boolean isDay() {
         return isDay;
     }
 
-    public void setDay(boolean day) {
+    public void setDay(Boolean day) {
         isDay = day;
     }
 

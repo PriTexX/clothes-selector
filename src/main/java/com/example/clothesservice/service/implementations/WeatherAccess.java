@@ -2,10 +2,7 @@ package com.example.clothesservice.service.implementations;
 
 import com.example.clothesservice.models.WeatherModel;
 import com.example.clothesservice.service.interfaces.IWeatherAccess;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -49,15 +46,20 @@ public class WeatherAccess implements IWeatherAccess {
 
         String responseString = response.body();
 
+//        Gson gson = new Gson();
+//        WeatherModel weatherModel= gson.fromJson(responseString, WeatherModel.class);
+
         JsonElement stringElement = JsonParser.parseString(responseString);
         JsonObject stringObject = stringElement.getAsJsonObject();
 
-        int temperature = (int)stringObject.get("tempC").getAsLong();
-        int humidity = (int)stringObject.get("humidity").getAsLong();
-        int windSpeed = (int)stringObject.get("windKPH").getAsLong();
-        String weather = stringObject.get("weatherShort").getAsString();
-        int feelsLike = (int)stringObject.get("feellikeC").getAsLong();
-        boolean isDay = stringObject.get("isDay").getAsBoolean();
+        JsonObject responseObject = stringObject.getAsJsonObject("response").getAsJsonObject("ob");
+
+        int temperature = (int)responseObject.get("tempC").getAsLong();
+        int humidity = (int)responseObject.get("humidity").getAsLong();
+        int windSpeed = (int)responseObject.get("windKPH").getAsLong();
+        String weather = responseObject.get("weatherShort").getAsString();
+        int feelsLike = (int)responseObject.get("feelslikeC").getAsLong();
+        Boolean isDay = responseObject.get("isDay").getAsBoolean();
 
         WeatherModel currentWeather = new WeatherModel(temperature,
                 humidity, windSpeed,weather,feelsLike,isDay);
