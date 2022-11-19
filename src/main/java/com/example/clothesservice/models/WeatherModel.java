@@ -64,4 +64,16 @@ public class WeatherModel {
     public void setDay(boolean day) {
         isDay = day;
     }
+
+    @Override
+    public String toString() {
+        return "WeatherModel{" +
+                "temperature=" + temperature +
+                ", humidity=" + humidity +
+                ", windSpeed=" + windSpeed +
+                ", weather='" + weather + '\'' +
+                ", feelsLike=" + feelsLike +
+                ", isDay=" + isDay +
+                '}';
+    }
 }
