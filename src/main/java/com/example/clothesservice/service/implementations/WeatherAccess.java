@@ -23,13 +23,6 @@ public class WeatherAccess implements IWeatherAccess {
     @Override
     public WeatherModel GetCurrentWeatherState() throws URISyntaxException {
 
-//        var request = HttpRequest.newBuilder()
-//                .uri(new URI("https://aerisweather1.p.rapidapi.com/observations/moscow,ru"))
-//                .GET()
-//                .header("X-RapidAPI-Key", "48a90c9cc6mshdfd4feaf8f87050p1a3e9djsnc3e852683ec0")
-//                .header("X-RapidAPI-Host", "aerisweather1.p.rapidapi.com")
-//                .build();
-
         var request = HttpRequest.newBuilder()
                 .uri(new URI("https://aerisweather1.p.rapidapi.com/observations/moscow,ru"))
                 .GET()
@@ -46,13 +39,13 @@ public class WeatherAccess implements IWeatherAccess {
 
         String responseString = response.body();
 
-//        Gson gson = new Gson();
-//        WeatherModel weatherModel= gson.fromJson(responseString, WeatherModel.class);
+        return toWeatherModel(responseString);
+    }
 
-        JsonElement stringElement = JsonParser.parseString(responseString);
-        JsonObject stringObject = stringElement.getAsJsonObject();
-
-        JsonObject responseObject = stringObject.getAsJsonObject("response").getAsJsonObject("ob");
+    private WeatherModel toWeatherModel(String currentWeather){
+        JsonObject responseObject = JsonParser.parseString(currentWeather)
+                .getAsJsonObject().getAsJsonObject("response")
+                .getAsJsonObject("ob");
 
         int temperature = (int)responseObject.get("tempC").getAsLong();
         int humidity = (int)responseObject.get("humidity").getAsLong();
@@ -61,11 +54,7 @@ public class WeatherAccess implements IWeatherAccess {
         int feelsLike = (int)responseObject.get("feelslikeC").getAsLong();
         Boolean isDay = responseObject.get("isDay").getAsBoolean();
 
-        WeatherModel currentWeather = new WeatherModel(temperature,
+        return new WeatherModel(temperature,
                 humidity, windSpeed,weather,feelsLike,isDay);
-
-        System.out.println(currentWeather.toString());
-        System.out.println("Pause");
-        return null;
     }
 }

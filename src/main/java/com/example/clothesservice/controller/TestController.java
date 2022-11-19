@@ -1,5 +1,6 @@
 package com.example.clothesservice.controller;
 
+import com.example.clothesservice.models.WeatherModel;
 import com.example.clothesservice.service.implementations.WeatherAccess;
 import com.example.clothesservice.service.interfaces.IWeatherAccess;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +23,13 @@ public class TestController {
 
     @GetMapping("/test1")
     public ResponseEntity Get(){
+        WeatherModel weatherModel;
         try {
-            _weatherAccess.GetCurrentWeatherState();
+            weatherModel = _weatherAccess.GetCurrentWeatherState();
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
-        return ResponseEntity.ok("Success");
+        return ResponseEntity.ok(weatherModel);
     }
 
     @GetMapping("/test2")
