@@ -1,0 +1,41 @@
+{
+  "root":{
+    "children": [
+      {
+        "isLeaf": false,
+        "condition": "-30_-15",
+        "predicate": 0,
+        "children": [
+
+        ]
+      },
+
+      {
+        "isLeaf": false,
+        "condition": "-15_0",
+        "predicate": 0,
+        "children": [
+
+        ]
+      },
+
+      {
+        "isLeaf": false,
+        "condition": "0_15",
+        "predicate": 0,
+        "children": [
+
+        ]
+      },
+
+      {
+        "isLeaf": false,
+        "condition": "15_30",
+        "predicate": 0,
+        "children": [
+
+        ]
+      }
+    ]
+  }
+}
