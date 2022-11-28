@@ -15,7 +15,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -23,7 +23,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -31,7 +31,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -46,7 +46,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -54,7 +54,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -62,7 +62,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -78,7 +78,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -86,7 +86,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -94,7 +94,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -117,7 +117,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -125,7 +125,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -133,7 +133,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -148,7 +148,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -156,7 +156,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -164,7 +164,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -180,7 +180,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -188,7 +188,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -196,7 +196,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -219,7 +219,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -227,7 +227,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -235,7 +235,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -250,7 +250,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -258,7 +258,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -266,7 +266,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -282,7 +282,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -290,7 +290,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -298,7 +298,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -321,7 +321,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -329,7 +329,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -337,7 +337,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -352,7 +352,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -360,7 +360,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -368,7 +368,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }
@@ -384,7 +384,7 @@
                 "isLeaf": true,
                 "condition": "Snow",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -392,7 +392,7 @@
                 "isLeaf": true,
                 "condition": "Rain",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               },
@@ -400,7 +400,7 @@
                 "isLeaf": true,
                 "condition": "Sun",
                 "predicate": 1,
-                "children": [
+                "data": [
 
                 ]
               }

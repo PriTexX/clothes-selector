@@ -3,15 +3,15 @@ package com.example.clothesservice.service.implementations;
 import com.example.clothesservice.models.ClothesKit;
 import com.example.clothesservice.models.WeatherModel;
 import com.example.clothesservice.service.interfaces.IClothesSelector;
-import com.example.clothesservice.util.ChoiceTree;
+import com.example.clothesservice.util.choiceTree.*;
 
 public class ClothesSelector implements IClothesSelector {
     @Override
     public ClothesKit PickClothes(WeatherModel weatherModel) {
         var tree = new ChoiceTree();
-        var rootNode = new ChoiceTree.Node();
-
-        var firstNode = new ChoiceTree.Node();
+        var rootNode = new Node();
+        var node = new com.example.clothesservice.util.choiceTree.Node();
+        var firstNode = new Node();
         firstNode.set_condition("-20_-15");
         firstNode.set_predicate((var one, var another) -> {
             var range = ParseString(one);
