@@ -18,7 +18,6 @@ public class ChoiceTreeBuilder {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         var rootNode = new Node();
 
         for(var el : jsonArray){
