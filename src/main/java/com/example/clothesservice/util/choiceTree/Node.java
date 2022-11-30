@@ -5,6 +5,9 @@ import java.util.List;
 public class Node{
     private List<Node> children = null;
     private String _condition;
+    private Predicate _predicate;
+    private boolean _isLeaf = false;
+    private List<String> _data = null;
 
     public Node() {}
 
@@ -12,11 +15,6 @@ public class Node{
         this._condition = _condition;
         this._predicate = _predicate;
     }
-
-    private Predicate _predicate;
-    private boolean _isLeaf = false;
-    private List<String> _data = null;
-
 
     public boolean Check(String userCondition){
         return _predicate.Check(_condition, userCondition);
