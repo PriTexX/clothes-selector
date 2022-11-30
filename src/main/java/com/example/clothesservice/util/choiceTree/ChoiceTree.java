@@ -10,4 +10,13 @@ public class ChoiceTree {
     }
 
     private Node _root;
+
+    public static Node MakeChoice(Node startNode, String condition){
+        for(var node : startNode.getChildren()){
+            if(node.Check(condition))
+                return node;
+        }
+
+        throw new RuntimeException("No node with such condition");
+    }
 }
