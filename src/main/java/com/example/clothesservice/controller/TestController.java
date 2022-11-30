@@ -2,6 +2,7 @@ package com.example.clothesservice.controller;
 
 import com.example.clothesservice.models.WeatherModel;
 import com.example.clothesservice.service.implementations.WeatherAccess;
+import com.example.clothesservice.service.interfaces.IClothesSelector;
 import com.example.clothesservice.service.interfaces.IWeatherAccess;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +16,12 @@ import java.net.URISyntaxException;
 @RequestMapping("/test")
 public class TestController {
 
-    private IWeatherAccess _weatherAccess;
+    private final IWeatherAccess _weatherAccess;
+    private final IClothesSelector _clothesSelector;
 
-    public TestController(IWeatherAccess wa){
-        _weatherAccess = wa;
+    @Autowired
+    public TestController(IWeatherAccess wa, IClothesSelector cs){
+        _weatherAccess = wa;_clothesSelector = cs;
     }
 
     @GetMapping("/test1")
@@ -29,6 +32,10 @@ public class TestController {
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
+        weatherModel.setWeather("Rain");
+        weatherModel.setWindSpeed(9);
+        weatherModel.setFeelsLike(-20);
+        var f = _clothesSelector.PickClothes(weatherModel);
         return ResponseEntity.ok(weatherModel);
     }
 

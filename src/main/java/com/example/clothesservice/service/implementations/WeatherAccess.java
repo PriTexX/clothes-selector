@@ -24,7 +24,7 @@ public class WeatherAccess implements IWeatherAccess {
     public WeatherModel GetCurrentWeatherState() throws URISyntaxException {
 
         var request = HttpRequest.newBuilder()
-                .uri(new URI("https://aerisweather1.p.rapidapi.com/observations/kazan,ru"))
+                .uri(new URI("https://aerisweather1.p.rapidapi.com/observations/moscow,ru"))
                 .GET()
                 .header("X-RapidAPI-Key", "48a90c9cc6mshdfd4feaf8f87050p1a3e9djsnc3e852683ec0")
                 .header("X-RapidAPI-Host", "aerisweather1.p.rapidapi.com")
