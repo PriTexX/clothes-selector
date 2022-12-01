@@ -22,6 +22,9 @@ public class ClothesSelector implements IClothesSelector {
         var nextNode = ChoiceTree.MakeChoice(tree.get_root(), Integer.toString(weatherModel.getFeelsLike()));
         nextNode = ChoiceTree.MakeChoice(nextNode, Integer.toString(weatherModel.getWindSpeed()));
         nextNode = ChoiceTree.MakeChoice(nextNode, weatherModel.getWeather());
-        return null;
+
+        ClothesKit returnedModel = new ClothesKit(nextNode.get_data());
+
+        return returnedModel;
     }
 }
