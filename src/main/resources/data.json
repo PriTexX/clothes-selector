@@ -1,0 +1,487 @@
+{
+  "root":{
+    "children": [
+      {
+        "isLeaf": false,
+        "condition": "-30_-15",
+        "predicate": 0,
+        "children": [
+          {
+            "isLeaf": false,
+            "condition": "0_7",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;горнолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;горнолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "пуховик;шуба",
+                  "брюки",
+                  "ботинки"
+                ]
+              }
+            ]
+          },
+          {
+            "isLeaf": false,
+            "condition": "7_18",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;горнолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;горнолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "пуховик;шуба",
+                  "брюки",
+                  "ботинки"
+                ]
+              }
+            ]
+          },
+
+          {
+            "isLeaf": false,
+            "condition": "18_100",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;горнолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;горнолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "пуховик;шуба",
+                  "брюки",
+                  "ботинки"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "isLeaf": false,
+        "condition": "-15_0",
+        "predicate": 0,
+        "children": [
+          {
+            "isLeaf": false,
+            "condition": "0_7",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;гонолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;гонолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "пуховик;Шуба;Теплое пальто",
+                  "брюки;Джоггеры;Спортивные штаны",
+                  "ботинки"
+                ]
+              }
+            ]
+          },
+          {
+            "isLeaf": false,
+            "condition": "7_18",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;гонолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;гонолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "пуховик,шуба",
+                  "брюки;гонолыжные штаны",
+                  "ботинки"
+                ]
+              }
+            ]
+          },
+
+          {
+            "isLeaf": false,
+            "condition": "18_100",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;гонолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки;гонолыжные штаны",
+                  "ботинки"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "пуховик",
+                  "брюки",
+                  "ботинки"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "isLeaf": false,
+        "condition": "0_15",
+        "predicate": 0,
+        "children": [
+          {
+            "isLeaf": false,
+            "condition": "0_7",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "ветровка;куртка стеганная",
+                  "джинсы;брюки;спортивные штаны;джоггеры",
+                  "кроссовки;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "ветровка;куртка стеганная",
+                  "джинсы;брюки;спортивные штаны;джоггеры",
+                  "кроссовки;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "ветровка;пальто;куртка стеганная;плащ;тренч;бомбер",
+                  "джинсы;брюки;спортивные штаны;джоггеры",
+                  "кроссовки;кеды;сапоги;оксфорды;лоферы;туфли"
+                ]
+              }
+            ]
+          },
+          {
+            "isLeaf": false,
+            "condition": "7_18",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "ветровка;куртка стеганная",
+                  "джинсы;брюки;спортивные штаны;джоггеры",
+                  "кроссовки;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "ветровка;куртка стеганная",
+                  "джинсы;брюки;спортивные штаны;джоггеры",
+                  "кроссовки;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "ветровка;пальто;куртка стеганная;плащ;тренч;бомбер",
+                  "джинсы;брюки;спортивные штаны;джоггеры",
+                  "кроссовки;кеды;сапоги;оксфорды;лоферы;туфли"
+                ]
+              }
+            ]
+          },
+
+          {
+            "isLeaf": false,
+            "condition": "18_100",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "ветровка;куртка стеганная",
+                  "джинсы;брюки;спортивные штаны;джоггеры",
+                  "кроссовки;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "ветровка;куртка стеганная",
+                  "джинсы;брюки;спортивные штаны;джоггеры",
+                  "кроссовки;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "ветровка;пальто;куртка стеганная;плащ;тренч;бомбер",
+                  "джинсы;брюки;спортивные штаны;джоггеры",
+                  "кроссовки;кеды;сапоги;оксфорды;лоферы;туфли"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "isLeaf": false,
+        "condition": "15_30",
+        "predicate": 0,
+        "children": [
+          {
+            "isLeaf": false,
+            "condition": "0_7",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "дождевик",
+                  "спортивные штаны;джоггеры;джинсы",
+                  "кроссовки;сапоги;туфли"
+
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "дождевик",
+                  "спортивные штаны;джоггеры;джинсы",
+                  "кроссовки;сапоги;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "пиджак;косуха;дождевик;джемпер",
+                  "спортивные штаны;шорты;джоггеры;джинсы",
+                  "кроссовки;кеды;лофферы;сандалии;слипоны;тапочки;сапоги;кроксы;мокасины"
+
+                ]
+              }
+            ]
+          },
+          {
+            "isLeaf": false,
+            "condition": "7_18",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "дождевик",
+                  "спортивные штаны;джоггеры;джинсы",
+                  "кроссовки;сапоги;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "дождевик",
+                  "спортивные штаны;джоггеры;джинсы",
+                  "кроссовки;сапоги;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "пиджак;косуха;дождевик;джемпер",
+                  "спортивные штаны;шорты;джоггеры;джинсы",
+                  "кроссовки;кеды;лофферы;сандалии;слипоны;тапочки;сапоги;кроксы;мокасины"
+                ]
+              }
+            ]
+          },
+
+          {
+            "isLeaf": false,
+            "condition": "18_100",
+            "predicate": 0,
+            "children": [
+              {
+                "isLeaf": true,
+                "condition": "Snow",
+                "predicate": 1,
+                "data": [
+                  "дождевик",
+                  "спортивные штаны;джоггеры;джинсы",
+                  "кроссовки;сапоги;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Rain",
+                "predicate": 1,
+                "data": [
+                  "дождевик",
+                  "спортивные штаны;джоггеры;джинсы",
+                  "кроссовки;сапоги;туфли"
+                ]
+              },
+              {
+                "isLeaf": true,
+                "condition": "Sun",
+                "predicate": 1,
+                "data": [
+                  "пиджак;косуха;дождевик;джемпер",
+                  "спортивные штаны;шорты;джоггеры;джинсы",
+                  "кроссовки;кеды;лофферы;сандалии;слипоны;тапочки;сапоги;кроксы;мокасины"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
