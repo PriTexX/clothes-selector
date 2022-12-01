@@ -7,6 +7,7 @@ import com.example.clothesservice.util.choiceTree.*;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.util.List;
 
 @Service
 public class ClothesSelector implements IClothesSelector {
@@ -23,8 +24,8 @@ public class ClothesSelector implements IClothesSelector {
         nextNode = ChoiceTree.MakeChoice(nextNode, Integer.toString(weatherModel.getWindSpeed()));
         nextNode = ChoiceTree.MakeChoice(nextNode, weatherModel.getWeather());
 
-        ClothesKit returnedModel = new ClothesKit(nextNode.get_data());
+        var data = nextNode.get_data();
 
-        return returnedModel;
+        return new ClothesKit(List.of(data.get(0).split(";")), List.of(data.get(1).split(";")), List.of(data.get(2).split(";")));
     }
 }

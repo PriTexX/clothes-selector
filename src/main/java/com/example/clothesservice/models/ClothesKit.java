@@ -1,20 +1,18 @@
 package com.example.clothesservice.models;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.List;
 
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class ClothesKit {
-    private List<String> clothes;
-
-    public ClothesKit(List<String> clothes) {
-        this.clothes = clothes;
-    }
-
-    public List<String> getClothes() {
-        return clothes;
-    }
-
-    public void setClothes(List<String> clothes) {
-        this.clothes = clothes;
-    }
-
+    private List<String> upperClothes;
+    private List<String> lowerClothes;
+    private List<String> shoes;
 }

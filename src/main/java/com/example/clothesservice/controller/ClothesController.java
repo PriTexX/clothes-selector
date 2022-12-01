@@ -13,19 +13,19 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 @RestController
-@RequestMapping("/test")
-public class TestController {
-
+@RequestMapping("/clothes")
+public class ClothesController {
     private final IWeatherAccess _weatherAccess;
     private final IClothesSelector _clothesSelector;
 
     @Autowired
-    public TestController(IWeatherAccess wa, IClothesSelector cs){
-        _weatherAccess = wa;_clothesSelector = cs;
+    public ClothesController(IWeatherAccess weatherAccess, IClothesSelector clothesSelector){
+        _weatherAccess = weatherAccess;
+        _clothesSelector = clothesSelector;
     }
 
-    @GetMapping("/test1")
-    public ResponseEntity<String> Get(Integer temp, Integer windSpeed, String weather, Integer realTemp){
+    @GetMapping
+    public ResponseEntity<String> Get(String location){
         WeatherModel weatherModel;
         try {
             weatherModel = _weatherAccess.GetCurrentWeatherState();
@@ -33,15 +33,11 @@ public class TestController {
             throw new RuntimeException(e);
         }
 
-        weatherModel.setFeelsLike(temp);
-        weatherModel.setWindSpeed(windSpeed);
-        weatherModel.setWeather(weather);
-
         var clothesKit = _clothesSelector.PickClothes(weatherModel);
 
         var responseString = "Сегодня в городе Москва: %d C, ощущается как %d, %s - поэтому лучше надеть что либо из этого: %s; %s; %s"
                 .formatted(
-                        realTemp,
+                        weatherModel.getTemperature(),
                         weatherModel.getFeelsLike(),
                         weatherModel.getWeather(),
                         Join(clothesKit.getUpperClothes(), ", "),
