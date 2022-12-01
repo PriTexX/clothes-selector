@@ -36,7 +36,11 @@ public class TestController {
         weatherModel.setWindSpeed(9);
         weatherModel.setFeelsLike(-20);
         var f = _clothesSelector.PickClothes(weatherModel);
-        return ResponseEntity.ok(weatherModel);
+//        return ResponseEntity.ok(f.getClothes());
+        return ResponseEntity.ok("Сегодня лучше надеть " + f.getClothes().get(0) + ", на низ пойдет " +
+                f.getClothes().get(1) + ", а вот ножки лучше утеплить " +  f.getClothes().get(2));
+        //Сегодня в городе {location}: {temperature}, ощущается как {feelsLike}, {weather} - поэтому лучше надеть {upperWeather}, {bottomClothes}, {shoes}.
+//        return ResponseEntity.ok(weatherModel);
     }
 
     @GetMapping("/test2")
