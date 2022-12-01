@@ -3,37 +3,18 @@ package com.example.clothesservice.models;
 import java.util.List;
 
 public class ClothesKit {
-    private List<String> upperClothes;
-    private List<String> lowerClothes;
-    private List<String> shoes;
+    private List<String> clothes;
 
-    public ClothesKit(List<String> upperClothes, List<String> lowerClothes, List<String> shoes) {
-        this.upperClothes = upperClothes;
-        this.lowerClothes = lowerClothes;
-        this.shoes = shoes;
+    public ClothesKit(List<String> clothes) {
+        this.clothes = clothes;
     }
 
-    public List<String> getShoes() {
-        return shoes;
+    public List<String> getClothes() {
+        return clothes;
     }
 
-    public void setShoes(List<String> shoes) {
-        this.shoes = shoes;
+    public void setClothes(List<String> clothes) {
+        this.clothes = clothes;
     }
 
-    public List<String> getUpperClothes() {
-        return upperClothes;
-    }
-
-    public void setUpperClothes(List<String> upperClothes) {
-        this.upperClothes = upperClothes;
-    }
-
-    public List<String> getLowerClothes() {
-        return lowerClothes;
-    }
-
-    public void setLowerClothes(List<String> lowerClothes) {
-        this.lowerClothes = lowerClothes;
-    }
 }
