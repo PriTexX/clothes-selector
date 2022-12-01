@@ -1,6 +1,6 @@
 package com.example.clothesservice.service.implementations;
 
-import com.example.clothesservice.models.WeatherModel;
+import  com.example.clothesservice.models.WeatherModel;
 import com.example.clothesservice.service.interfaces.IWeatherAccess;
 import com.google.gson.*;
 import org.springframework.stereotype.Service;
